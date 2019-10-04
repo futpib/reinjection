@@ -1,0 +1,56 @@
+{
+  "name": "reinjection",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "xo && nyc ava"
+  },
+  "homepage": "https://github.com/futpib/reinjection",
+  "ava": {
+    "verbose": true,
+    "babel": {
+      "testOptions": {
+        "presets": [
+          "@babel/preset-react"
+        ]
+      }
+    },
+    "require": [
+      "./test/_setup-browser-env.js",
+      "./test/_setup-enzyme-adapter.js"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "ava": "^2.3.0",
+    "browser-env": "^3.2.6",
+    "coveralls": "^3.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint-config-xo-overrides": "^1.4.0",
+    "eslint-config-xo-react": "^0.20.0",
+    "eslint-plugin-react": "^7.15.1",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "nyc": "^14.1.1",
+    "react": "^16.10.2",
+    "react-addons-test-utils": "^15.6.2",
+    "react-dom": "^16.10.2",
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "extends": [
+      "xo-react",
+      "eslint-config-xo-overrides"
+    ],
+    "rules": {
+      "react/prop-types": "off"
+    }
+  },
+  "peerDependencies": {
+    "react": "^16.10.2"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4"
+  }
+}
