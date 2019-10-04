@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.0.0",
-    "ava": "^2.3.0",
+    "ava": "^2.4.0",
     "browser-env": "^3.2.6",
     "coveralls": "^3.0.6",
     "enzyme": "^3.10.0",
@@ -36,7 +36,7 @@
     "react": "^16.10.2",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.10.2",
-    "xo": "^0.24.0"
+    "xo": "^0.25.3"
   },
   "xo": {
     "extends": [
